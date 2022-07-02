@@ -18,9 +18,11 @@ public class TileBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0))
-        {
-            Debug.Log($"touched me ({X}, {Y})");
-        }
+        
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log($"touched me ({X}, {Y})");
     }
 }
